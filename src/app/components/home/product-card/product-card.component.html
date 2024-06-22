@@ -1,9 +1,10 @@
 <div class="col-md-12 m-2">
-    <mat-card class="example-card" appearance="outlined">
+    <mat-card class="example-card" appearance="outlined" color="primary">
         <mat-card-header>
             <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title class="text-white">{{parentToChild.name}}</mat-card-title>
-            <mat-card-subtitle>{{parentToChild.genre}}</mat-card-subtitle>
+            <mat-card-title>{{parentToChild.name}}</mat-card-title>
+            <!-- <mat-card-title>{{parentToChild.title}}</mat-card-title> -->
+            <mat-card-subtitle>{{parentToChild.headline}}</mat-card-subtitle>
         </mat-card-header>
         <img mat-card-image [src]="parentToChild.image"
             [alt]="parentToChild.name">
