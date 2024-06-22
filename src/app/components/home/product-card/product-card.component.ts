@@ -16,7 +16,7 @@ export class ProductCardComponent {
 
   viewProduct() {
     console.log('viewChild');
-    this.childToParent.emit(this.parentToChild.name)
+    this.childToParent.emit(this.parentToChild.id)
   }
 }
 
