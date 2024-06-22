@@ -5,9 +5,21 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   template: `
-  <h1>Header Works</h1>
+  <div class="col-12 div-design py-3 my-2">
+  <a class="text-violet-800 font-bold p-3" href=''>Comer*AmiGos</a>
+  </div>
   `,
-  styles:``
+  styles: `
+  a{
+    width: 100%;
+    font-size: 40px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    
+  }
+  .div-design {
+    border-bottom: 3px solid red;
+    border-style: double;
+  }`
 })
 export class HeaderComponent {
 
