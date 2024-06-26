@@ -1,43 +1,45 @@
 <h1 class="p-2">Add Products</h1>
-<div class="col-md-12 flex flex-wrap p-3">
-    <mat-form-field appearance="fill" class="col-md-7">
-        <mat-label>Name</mat-label>
-        <input matInput placeholder="Enter Name">
-    </mat-form-field>
+<form (ngSubmit)="addProduct()">
+    <div class="col-md-12 flex flex-wrap p-3">
+        <mat-form-field appearance="fill" class="col-md-7">
+            <mat-label>Name</mat-label>
+            <input matInput placeholder="Enter Name" [(ngModel)]="product.name" name="name">
+        </mat-form-field>
 
-    <mat-form-field appearance="fill" class="col-md-7">
-        <mat-label>Description</mat-label>
-        <input matInput placeholder="Enter Description">
-    </mat-form-field>
+        <mat-form-field appearance="fill" class="col-md-7">
+            <mat-label>Description</mat-label>
+            <input matInput placeholder="Enter Description" [(ngModel)]="product.description" name="description">
+        </mat-form-field>
 
-    <mat-form-field appearance="fill" class="col-md-7">
-        <mat-label>Headline</mat-label>
-        <input matInput placeholder="Enter Headline">
-    </mat-form-field>
+        <mat-form-field appearance="fill" class="col-md-7">
+            <mat-label>Headline</mat-label>
+            <input matInput placeholder="Enter Headline" [(ngModel)]="product.headline" name="headline">
+        </mat-form-field>
 
-    <mat-form-field appearance="fill" class="col-md-7">
-        <mat-label>Calories</mat-label>
-        <input matInput placeholder="Enter Calories">
-    </mat-form-field>
+        <mat-form-field appearance="fill" class="col-md-7">
+            <mat-label>Calories</mat-label>
+            <input matInput placeholder="Enter Calories" [(ngModel)]="product.calories" name="calories">
+        </mat-form-field>
 
-    <mat-form-field appearance="fill" class="col-md-7">
-        <mat-label>Carbos</mat-label>
-        <input matInput placeholder="Enter Carbos">
-    </mat-form-field>
+        <mat-form-field appearance="fill" class="col-md-7">
+            <mat-label>Carbos</mat-label>
+            <input matInput placeholder="Enter Carbos" [(ngModel)]="product.carbos" name="carbos">
+        </mat-form-field>
 
-    <mat-form-field appearance="fill" class="col-md-7">
-        <mat-label>Fats</mat-label>
-        <input matInput placeholder="Enter Fats">
-    </mat-form-field>
+        <mat-form-field appearance="fill" class="col-md-7">
+            <mat-label>Fats</mat-label>
+            <input matInput placeholder="Enter Fats" [(ngModel)]="product.fats" name="fats">
+        </mat-form-field>
 
-    <mat-form-field appearance="fill" class="col-md-7">
-        <mat-label>Proteins</mat-label>
-        <input matInput placeholder="Enter Proteins">
-    </mat-form-field>
+        <mat-form-field appearance="fill" class="col-md-7">
+            <mat-label>Proteins</mat-label>
+            <input matInput placeholder="Enter Proteins" [(ngModel)]="product.proteins" name="proteins">
+        </mat-form-field>
 
-    <mat-form-field appearance="fill" class="col-md-7">
-        <mat-label>Image</mat-label>
-        <input matInput placeholder="Enter Image">
-    </mat-form-field>
-</div>
-<button color="primary mx-3" mat-raised-button class="p-4">Add Product</button>
+        <mat-form-field appearance="fill" class="col-md-7">
+            <mat-label>Image</mat-label>
+            <input matInput placeholder="Enter Image" [(ngModel)]="product.image" name="image">
+        </mat-form-field>
+    </div>
+    <button color="primary mx-3" mat-raised-button class="p-4" type="submit">Add Product</button>
+</form>

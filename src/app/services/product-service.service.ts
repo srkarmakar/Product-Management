@@ -16,4 +16,8 @@ export class ProductServiceService {
   getProductDetails(id: string) {
     return this.http.get<Product>('http://localhost:3000/products/'+id)
   }
+
+  addNewProduct(product: Product){
+    return this.http.post<Product>('http://localhost:3000/products',product)
+  }
 }
