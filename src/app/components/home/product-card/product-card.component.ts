@@ -15,7 +15,7 @@ export class ProductCardComponent {
   @Output() childToParent = new EventEmitter<string>();
 
   viewProduct() {
-    console.log('viewChild');
+    //console.log('viewChild');
     this.childToParent.emit(this.parentToChild.id)
   }
 }

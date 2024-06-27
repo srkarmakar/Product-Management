@@ -11,5 +11,6 @@
         <p>Fats: {{product.fats}}</p>
         <p>Proteins: {{product.proteins}}</p>
         <p>Calories: {{product.calories}}</p>
+        <button color="primary" class="text-center" mat-raised-button [routerLink]="'/edit-product/'+product.id">Update</button>
     </div>
 </div>

@@ -33,7 +33,13 @@ export class AddProductComponent {
   };
   router = inject(Router)
 
-  addProduct() {
+  addProduct() {    
+    //Generate Random Id
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijgklmnopqrstuvwxyz0123456789'
+    for (let i = 0; i <= characters.length; i++) {
+      this.product.id += String(characters.charAt(Math.floor(Math.random() * characters.length)));
+    }
+
     this.productService.addNewProduct(this.product).subscribe(result => {
       this.router.navigateByUrl('');
     });

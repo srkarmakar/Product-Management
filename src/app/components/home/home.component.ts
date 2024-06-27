@@ -30,8 +30,8 @@ export class HomeComponent implements OnInit {
   }
 
   viewProductDetails(event: any) {
-    console.log('ViewParent', event);
-    this.router.navigateByUrl('/product/'+event)
+    //console.log('ViewParent', event);
+    this.router.navigateByUrl('/product/' + event)
   }
 
   searchResults(event: any) {
