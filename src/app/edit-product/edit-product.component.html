@@ -1,0 +1,45 @@
+<h1 class="p-2">Update Products</h1>
+<form [formGroup]="productForm" (ngSubmit)="editProduct()">
+    <div class="col-md-12 flex flex-wrap p-3">
+        <mat-form-field appearance="fill" class="col-md-7">
+            <mat-label>Name</mat-label>
+            <input matInput placeholder="Enter Name" name="name" formControlName="name">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="col-md-7">
+            <mat-label>Description</mat-label>
+            <input matInput placeholder="Enter Description" name="description" formControlName="description">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="col-md-7">
+            <mat-label>Headline</mat-label>
+            <input matInput placeholder="Enter Headline" name="headline" formControlName="headline">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="col-md-7">
+            <mat-label>Calories</mat-label>
+            <input matInput placeholder="Enter Calories" name="calories" formControlName="calories">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="col-md-7">
+            <mat-label>Carbos</mat-label>
+            <input matInput placeholder="Enter Carbos" name="carbos" formControlName="carbos">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="col-md-7">
+            <mat-label>Fats</mat-label>
+            <input matInput placeholder="Enter Fats" name="fats" formControlName="fats">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="col-md-7">
+            <mat-label>Proteins</mat-label>
+            <input matInput placeholder="Enter Proteins" name="proteins" formControlName="proteins">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="col-md-7">
+            <mat-label>Image</mat-label>
+            <input matInput placeholder="Enter Image" name="image" formControlName="image">
+        </mat-form-field>
+    </div>
+    <button color="primary mx-3" mat-raised-button class="p-4" type="submit">Update</button>
+</form>
